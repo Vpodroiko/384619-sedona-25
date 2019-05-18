@@ -7,7 +7,7 @@
   <body>
     <header>
       <nav class="main-navigation">
-        <img src="img/logo-sedona.svg" alt="Логотип" width="130" height="70">
+        <img src="img/logo-sedona.svg" alt="Логотип Седоны" width="130" height="70">
         <ul>
           <li><a href="info.html">Информация</a></li>
           <li><a href="gallery.html">Фото и видео</a></li>
@@ -18,8 +18,8 @@
     </header>
 
     <main class="container">
-    <h1 class="main-title visually-hidden">Информация о Седоне</h1>
-    <img src="img/welcome-image.svg" alt="Добро пожаловать в Седону" width="462" height="270">
+    <h1 class="visually-hidden">Информация о Седоне</h1>
+    <img src="img/welcome-image.svg" alt="Добро пожаловать в прекрасную Седону" width="462" height="270">
     <img src="img/index.jpg" alt="Вид на Седону" width="1186" height="718">
 
     <section class="sedona-benefits">
@@ -82,11 +82,20 @@
         Укажите предполагаемые даты поездки, <br>
         и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
-      <!-- Здесь будет форма -->
+      <div class="hotels-search">
+        <h5>Поиск гостиницы в Седоне</h4>
+          <form class="hotels-filter" action="index.html" method="post">
+            <p class="filters-item"><label>Дата заезда: <input type="text" name="checkin-date" value="" placeholder="24 апреля 2017"><label></p>
+            <p class="filters-item"><label>Дата выезда: <input type="text" name="checkout-date" value="" placeholder="4 июля 2017"><label></p>
+            <p class="filters-item"><label>Взрослые: <input type="number" name="adults-number" placeholder="2" min="0" max="100" step="1"><label></p>
+            <p class="filters-item"><label>Дети: <input type="number" name="children-number" placeholder="0" min="0" max="100" step="1"><label></p>
+            <button type="submit">Найти</button>
+          </form>
+      </div>
     </section>
 
     <div class="map">
-      <img src="img/map.png" alt="Карта" width="1200" height="474">
+      <img src="img/map.png" alt="Седона,Аризона 86336, США" width="1200" height="474">
     </div>
     </main>
 
@@ -97,9 +106,9 @@
 
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">YouTube</a></li>
+          <li><a class="social-button" href="#" aria-label="Twitter"></a></li>
+          <li><a class="social-button" href="#" aria-label="Facebook"></a></li>
+          <li><a class="social-button" href="#" aria-label="YouTube"></a></li>
         </ul>
       </div>
 
