@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans" Arial sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-image: url("index.jpg");
+  background-position: top center;
+  background-repeat: no-no-repeat;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #ffffff;
+  list-style: none;
+}
+
+.main-navigation a {
+  color: #000000;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  color: #81b3d2;
+}
+
+.main-navigation a:active {
+  color: #cacaca;
+}
+
+.current-page a {
+  color: #766357;
+}
