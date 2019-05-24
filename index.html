@@ -12,7 +12,7 @@
       <nav class="main-navigation">
         <img src="img/logo-sedona.svg" alt="Логотип Седоны" width="130" height="70">
         <ul>
-          <li class="current-page"><a href="info.html">Информация</a></li>
+          <li><a href="#">Информация</a></li>
           <li><a href="gallery.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
           <li><a href="inner.html">Гостиницы</a></li>
@@ -26,15 +26,13 @@
     <img src="img/index.jpg" alt="Вид на Седону" width="1186" height="718">
 
     <section class="sedona-benefits">
-      <p>
+      <p class="sedona-lead">
         <b>Седона — небольшой городок в Аризоне,<br>
           заслуживающий большего!</b>
       </p>
 
-
-      <h2 class="visually-hidden">Почему Седона лучше гранд каньон</h2>
       <p>
-        Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+        <h2 class="benefits-heading">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
       </p>
 
       <ol class="benefits-list">
@@ -42,7 +40,7 @@
           <h3>Настоящий городок</h3>
           <p>— №1 —</p>
           <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <ul>
+            <ul class="city-benefits">
               <li>
                 <h3>Жильё</h3>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -82,19 +80,21 @@
 
     <section class="booking-dates">
       <h4 class="visually-hidden">Выбор даты поездки.</h4>
-      <p>
+      <p class="interested">
         <b>Заинтересовались?</b>
+      </p>
+      <p class="dates-request">
         Укажите предполагаемые даты поездки, <br>
         и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
       <div class="hotels-search">
-        <h5>Поиск гостиницы в Седоне</h4>
+        <button class="search-button">Поиск гостиницы в Седоне</button>
           <form class="hotels-filter" action="index.html" method="post">
             <p class="filters-item"><label>Дата заезда: <input type="text" name="checkin-date" value="" placeholder="24 апреля 2017"><label></p>
             <p class="filters-item"><label>Дата выезда: <input type="text" name="checkout-date" value="" placeholder="4 июля 2017"><label></p>
             <p class="filters-item"><label>Взрослые: <input type="number" name="adults-number" placeholder="2" min="0" max="100" step="1"><label></p>
             <p class="filters-item"><label>Дети: <input type="number" name="children-number" placeholder="0" min="0" max="100" step="1"><label></p>
-            <button type="submit">Найти</button>
+            <button class="find-button" type="submit">Найти</button>
           </form>
       </div>
     </section>
@@ -106,14 +106,14 @@
 
     <footer class="main-footer">
       <p class="visit-sedona">
-        <a href="#">#visitsedona</a>
+        <a href="#" class="visit-link">#visitsedona</a>
       </p>
 
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#" aria-label="Twitter"></a></li>
-          <li><a class="social-button" href="#" aria-label="Facebook"></a></li>
-          <li><a class="social-button" href="#" aria-label="YouTube"></a></li>
+          <li><a class="social-button" href="#">Twitter</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">YouTube</a></li>
         </ul>
       </div>
 

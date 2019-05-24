@@ -8,15 +8,15 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="inner-page">
+  <body>
     <header>
       <nav class="main-navigation">
+        <a href="index.html"><img src="img/logo-sedona.svg" alt="Логотип Седона, ссылка на главную страницу" width="130" height="70"></a></li>
         <ul>
           <li><a href="info.html">Информация</a></li>
           <li><a href="gallery.html">Фото и видео</a></li>
-          <li><a href="index.html"><img src="img/logo-sedona.svg" alt="Логотип Седона, ссылка на главную страницу" width="130" height="70"></a></li>
           <li><a href="map.html">Карта штата</a></li>
-          <li><a class="current-page" href="#">Гостиницы</a></li>
+          <li class="current-page"><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -30,16 +30,16 @@
       </section>
 
       <section class="search-results">
-        <h2 class="visually hidden">Результаты поиска</h2>
+        <h2 class="visually-hidden">Результаты поиска</h2>
 
         <ul class="results-list">
           <li class="results-item">
-            <h3>Amara Resort & Spa</h3>
+            <h3 class="hotel-name">Amara Resort & Spa</h3>
             <p class="results-item-image"><img src="img/item-1.jpg" alt="Amara Resort & Spa" width="135" height="91"></p>
-            <b>Гостиница</b>
-            <b>От 4000 Р.</b>
-            <a class="button" href="#">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+            <b class="accommodation-type">Гостиница</b>
+            <b class="price">От 4000 Р.</b>
+            <a class="button button-details" href="#">Подробнее</a>
+            <a class="button button-book" href="#">Забронировать</a>
             <p class="stars-number">
               <img src="img/star.svg" alt="4 звезды из 5" width="20" height="20">
               <img src="img/star.svg" alt="" width="20" height="20">
@@ -49,12 +49,12 @@
             <p class="number-rating">Рейтинг: 8,5</p>
           </li>
           <li class="results-item">
-            <h3>Desert Quail Inn</h3>
+            <h3 class="hotel-name">Desert Quail Inn</h3>
             <p class="results-item-image"><img src="img/item-2.jpg" alt="Desert Quail Inn" width="135" height="91"></p>
-            <b>Мотель</b>
-            <b>От 3000 Р.</b>
-            <a class="button" href="#">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+            <b class="accommodation-type">Мотель</b>
+            <b class="price">От 3000 Р.</b>
+            <a class="button button-details" href="#">Подробнее</a>
+            <a class="button button-book" href="#">Забронировать</a>
             <p class="stars-number">
               <img src="img/star.svg" alt="3 звезды из 5" width="20" height="20">
               <img src="img/star.svg" alt="" width="20" height="20">
@@ -63,12 +63,12 @@
             <p class="number-rating">Рейтинг: 8,9</p>
           </li>
           <li class="results-item">
-            <h3>Villas at Poco Diablo</h3>
+            <h3 class="hotel-name">Villas at Poco Diablo</h3>
             <p class="results-item-image"><img src="img/item-3.jpg" alt="Villas at Poco Diablo" width="135" height="91"></p>
-            <b>Апартаменты</b>
-            <b>От 2000 Р.</b>
-            <a class="button" href="#">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+            <b class="accommodation-type">Апартаменты</b>
+            <b class="price">От 2000 Р.</b>
+            <a class="button button-details" href="#">Подробнее</a>
+            <a class="button button-book" href="#">Забронировать</a>
             <p class="stars-number">
               <img src="img/star.svg" alt="2 звезды из 5" width="20" height="20">
               <img src="img/star.svg" alt="" width="20" height="20">
@@ -80,7 +80,7 @@
     </main>
     <footer class="main-footer">
       <p class="visit-sedona">
-        <a href="#">#visitsedona</a>
+        <a href="#" class="visit-link">#visitsedona</a>
       </p>
 
       <div class="footer-social">
