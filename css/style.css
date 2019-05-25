@@ -107,6 +107,7 @@ a {
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
+  text-transform: uppercase;
   background-color: #766357;
 
 }
@@ -122,6 +123,13 @@ a {
 
 .hotels-search p {
   font-weight: 700;
+}
+
+.hotels-search label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .hotels-search input {
@@ -147,6 +155,7 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .find-button:hover {
@@ -196,18 +205,20 @@ a {
   list-style: none;
 }
 
-.hotel-name {
+.hotel-name a {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
   font-weight: 700;
 }
 
-.hotel-name:hover {
+
+
+.hotel-name a:hover {
   color: #81b3d2;
 }
 
-.hotel-name:active {
+.hotel-name a:active {
   color: #dadada;
 }
 .accommodation-type,
