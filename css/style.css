@@ -10,10 +10,6 @@ body {
   text-transform: uppercase;
 
   background-color: #f2f2f2;
-  background-image: url("index.jpg");
-  background-position: top center;
-  background-repeat: no-no-repeat;
-
 }
 
 a {
@@ -22,6 +18,8 @@ a {
 
 .container {
   background-color: #ffffff;
+  width: auto;
+  margin: 0;
 }
 
 .main-navigation {
@@ -109,6 +107,9 @@ a {
   color: #ffffff;
   text-transform: uppercase;
   background-color: #766357;
+  width: 100%;
+  height: 86px;
+  padding: 35px 140px;
 
 }
 
@@ -168,8 +169,11 @@ a {
 }
 
 .main-footer {
+  width: 1200px;
+  height: 120px;
   background-color: rgba(250, 252, 248, 0.9);
   color: #000000;
+
 }
 
 .visit-link {
@@ -272,4 +276,207 @@ a {
   line-height: 21px;
   font-weight: 400;
   color: #666666;
+}
+
+
+/* layout */
+.wrapper {
+  width: 1200px;
+  height: 2760px;
+  margin: 0 auto;
+}
+
+.main-header {
+  width: 1200px;
+
+}
+
+.main-header-logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  width: 140px;
+  height: 70px;
+}
+
+.main-navigation {
+  width: 100%;
+  height: 56px;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-wrapper:first-child  {
+  margin-right: auto;
+  padding-left: 70px;
+}
+
+.menu-wrapper:nth-child(2) {
+  margin-left: auto;
+  padding-right: 70px;
+}
+
+.menu-wrapper li {
+  margin-right: 50px;
+  width: 100px;
+  min-height: 25px;
+  padding: 20px;
+}
+
+
+.welcome-wrapper {
+  display: block;
+  width: 100%;
+  height: 525px;
+}
+
+.welcome-image {
+  display: block;
+  margin: 0 auto;
+  padding-top: 75px;
+}
+
+.sedona-benefits {
+  margin-top: 50px;
+}
+
+.sedona-lead {
+  display: block;
+  width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefits-heading {
+  margin-top: 40px;
+}
+.benefits-wrapper {
+  width: 100%;
+}
+
+.benefits-list {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.benefits-list li {
+  width: 400px;
+  min-height: 255px;
+  margin: 0;
+  padding: 50px 60px 60px 60px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.benefits-list li:first-child,
+.benefits-list li:nth-child(2) {
+  width: 1200px;
+}
+
+.booking-dates {
+  margin-top: 50px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.interested {
+  margin-bottom: 38px;
+}
+
+.hotels-search {
+  width: 575px;
+  min-height: 480px;
+  margin: 50px auto;
+}
+
+.hotels-filter {
+  padding: 55px 60px;
+}
+
+.main-footer,
+.inner-footer {
+  display: flex;
+  margin: 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-footer div {
+width: 300px;
+min-height: 70px;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+/* inner page layout */
+
+.booking-filters {
+  margin: 0;
+  width: 1200px;
+  min-height: 220px;
+}
+
+.filering-options {
+  margin: 0;
+  width: 1200px;
+  height: 86px;
+}
+
+.results-list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  width: 1200px;
+  min-height: 455px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.results-item {
+  width: 1200px;
+  padding: 30px 75px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e5e5e5;
+  
+
+}
+
+.results-item div {
+  margin-right: 30px;
+}
+
+.hotel-profile {
+  flex-grow: 1;
+}
+
+.inner-footer {
+  width: 1198px;
+  height: 120px;
+  background-color: #fefefe;
+  color: #000000;
+  list-style: none;
+  border-top: 1px solid #e5e5e5;
 }

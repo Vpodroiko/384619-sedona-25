@@ -8,22 +8,29 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <div class="wrapper">
+    <header class="main-header">
+      <img class="main-header-logo" src="img/logo-sedona.svg" alt="Логотип Седоны" width="140" height="70">
       <nav class="main-navigation">
-        <img src="img/logo-sedona.svg" alt="Логотип Седоны" width="130" height="70">
         <ul>
+          <div class="menu-wrapper">
           <li><a href="#">Информация</a></li>
           <li><a href="gallery.html">Фото и видео</a></li>
+         </div>
+         <div class="menu-wrapper">
           <li><a href="map.html">Карта штата</a></li>
           <li><a href="inner.html">Гостиницы</a></li>
+        </div>
         </ul>
       </nav>
     </header>
 
     <main class="container">
     <h1 class="visually-hidden">Информация о Седоне</h1>
-    <img src="img/welcome-image.svg" alt="Добро пожаловать в прекрасную Седону" width="462" height="270">
-    <img src="img/index.jpg" alt="Вид на Седону" width="1186" height="718">
+    <div class="welcome-wrapper">
+    <img class="welcome-image" src="img/welcome-image.svg" alt="Добро пожаловать в прекрасную Седону" width="462" height="270">
+    </div>
+
 
     <section class="sedona-benefits">
       <p class="sedona-lead">
@@ -35,12 +42,13 @@
         <h2 class="benefits-heading">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
       </p>
 
+    <div class="benefits-wrapper">
       <ol class="benefits-list">
         <li>
           <h3>Настоящий городок</h3>
           <p>— №1 —</p>
           <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <ul class="city-benefits">
+          <!--  <ul class="city-benefits">
               <li>
                 <h3>Жильё</h3>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -53,9 +61,9 @@
                 <h3>Сувениры</h3>
                 <p>Не только китайского, но и местного производства!</p>
               </li>
-            </ul>
+            </ul> -->
         </li>
-        <li>
+        <li class="bridge-description">
           <h3>Там есть Мост дьявола</h3>
           <p>— №2 —</p>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -76,6 +84,7 @@
           <p>Большинство едет в гранд каньон и толпится там</p>
         </li>
       </ol>
+    </div>
     </section>
 
     <section class="booking-dates">
@@ -105,9 +114,11 @@
     </main>
 
     <footer class="main-footer">
+      <div class="footer-link">
       <p class="visit-sedona">
         <a href="#" class="visit-link">#visitsedona</a>
       </p>
+    </div>
 
       <div class="footer-social">
         <ul>
@@ -117,9 +128,12 @@
         </ul>
       </div>
 
+    <div class="footer-rights">
       <p class="footer-copyright">
         Website by <a class="html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
+    </div>
     </footer>
+    </div>
   </body>
   </html>
