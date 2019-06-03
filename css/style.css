@@ -80,17 +80,22 @@ img {
 
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  white-space: nowrap;
+
   width: 1px;
   height: 1px;
-  overflow: hidden;
+  margin: -1px;
   border: 0;
   padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+  overflow: hidden;
 }
 
 .interested {
@@ -203,7 +208,6 @@ img {
 .footer-copyright a,
  .social-button {
   line-height: 0;
-  font-size: 0;
   color: transparent;
 }
 
@@ -293,13 +297,14 @@ img {
 
 .main-header {
   width: 1200px;
-
+  position: relative;
 }
 
 .main-header-logo {
   position: absolute;
   left: 50%;
-  margin-left: -50px;
+  margin-left: -70px;
+  z-index: 1;
   width: 140px;
   height: 70px;
 }
@@ -322,7 +327,10 @@ img {
 }
 
 .main-navigation li {
+  min-width: 100px;
   padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .main-navigation li:nth-child(2) {
@@ -331,8 +339,17 @@ img {
 
 .welcome-wrapper {
   display: block;
+  position: relative;
   width: 100%;
   height: 525px;
+  background-image: url("../img/index.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.welcome-wrapper path {
+  position: absolute;
+
 }
 
 .welcome-image {
@@ -415,7 +432,6 @@ img {
   justify-content: space-around;
   align-items: center;
 }
-
 
 
 .footer-social ul {
