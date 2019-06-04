@@ -322,34 +322,29 @@ input[type="radio"].visually-hidden {
   list-style: none;
   background: #ffffff;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   box-sizing: border-box;
 }
 
 .main-navigation li {
   min-width: 100px;
-  padding: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 15px;
 }
 
-.main-navigation li:nth-child(2) {
+/* .main-navigation li:nth-child(2) {
   margin-right: auto;
-}
+} */
 
 .welcome-wrapper {
   display: block;
   position: relative;
   width: 100%;
-  height: 525px;
-  background-image: url("../img/index.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
-.welcome-wrapper path {
-  position: absolute;
-
+  height: 510px;
+  background:
+  url("../img/polygon.svg") no-repeat 50% 100%,
+  url("../img/index.jpg") no-repeat 50% 23%;
+  background-clip: content-box;
 }
 
 .welcome-image {
@@ -359,7 +354,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sedona-benefits {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .sedona-lead {
@@ -370,10 +365,10 @@ input[type="radio"].visually-hidden {
 }
 
 .benefits-heading {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .benefits-wrapper {
-  width: 100%;
+  width: 1200px;
 }
 
 .benefits-list {
@@ -390,15 +385,72 @@ input[type="radio"].visually-hidden {
   width: 400px;
   min-height: 255px;
   margin: 0;
-  padding: 50px 60px 60px 60px;
   box-sizing: border-box;
   text-align: center;
+  vertical-align: middle;
 }
 
-.benefits-list li:first-child,
+.benefits-list li:first-child {
+  width: 1200px;
+}
+
 .benefits-list li:nth-child(2) {
   width: 1200px;
 }
+
+.city-item-wrapper {
+  position: relative;
+  margin: 0;
+  width: 400px;
+  height: 255px;
+  background-color: rgba(129, 179, 210, 0.9);
+  box-sizing: border-box;
+  padding: 50px 60px 60px 60px;
+  color: #ffffff;
+}
+
+.city-item-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-right: -400px;
+  width: 800px;
+  height: 255px;
+  background-image: url("../img/image-1.jpg");
+  background-repeat: no-repeat;
+}
+
+.city-benefits {
+  display: flex;
+  width: 1200px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.city-benefits li {
+  width: 400px;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.bridge-wrapper {
+  position: relative;
+  margin: 0;
+  width: 400px;
+  height: 255px;
+  background-color: rgba(129, 179, 210, 0.9);
+  box-sizing: border-box;
+  padding: 50px 60px 60px 60px;
+  color: #ffffff;
+}
+
+
+
+/*-------*/
 
 .booking-dates {
   margin-top: 50px;
