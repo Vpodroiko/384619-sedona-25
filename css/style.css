@@ -209,7 +209,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 1200px;
   height: 120px;
-  background-color: rgba(250, 252, 248, 0.9);
+  background-color: #fefefe;
   color: #000000;
 
 }
@@ -671,9 +671,12 @@ li .bridge-description {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #e5e5e5;
-
-
 }
+
+.results-list li:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+
 
 .hotel-photo,
 .hotel-profile {
@@ -1125,4 +1128,8 @@ a.html-academy-logo:hover path {
 
 a.html-academy-logo:active path {
   fill: #bdbbbc;
+}
+
+.footer-opacity {
+  opacity: 0.9;
 }
