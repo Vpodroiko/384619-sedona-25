@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="wrapper">
+    <div class="inner-wrapper">
     <header>
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html"><img src="img/logo-sedona.svg" alt="Логотип Седона, ссылка на главную страницу" width="140" height="70"></a>
@@ -32,16 +32,28 @@
           <span>Инфраструктура:</span>
           <ul class="search-items-list">
             <li class="search item">
-              <input type="checkbox" name="pool" id="pool">
-              <label for="pool">Бассейн</label>
+              <label class="label-checkbox">
+              <input type="checkbox" name="pool" id="pool" class="visually-hidden" checked>
+              <span class="checkbox-indicator">
+              </span>
+              Бассейн</label>
             </li>
+
+
             <li class="search item">
-              <input type="checkbox" name="parking" id="parking">
-              <label for="parking">Парковка</label>
+              <label class="label-checkbox">
+              <input type="checkbox" name="parking" id="parking" class="visually-hidden">
+              <span class="checkbox-indicator">
+              </span>
+              Парковка</label>
             </li>
+
             <li class="search item">
-              <input type="checkbox" name="wifi" id="wifi">
-              <label for="wifi">WI-FI</label>
+              <label class="label-checkbox">
+              <input type="checkbox" name="wifi" id="wifi" class="visually-hidden">
+              <span class="checkbox-indicator">
+              </span>
+              WI-FI</label>
             </li>
             </ul>
         </div>
@@ -50,16 +62,27 @@
             <span>Тип жилья:</span>
             <ul class="search-items-list">
             <li class="search item">
-              <input type="checkbox" name="hotel" id="hotel">
-              <label for="hotel">Гостиница</label>
+              <label class="label-checkbox">
+              <input type="checkbox" name="hotel" id="hotel" class="visually-hidden" checked>
+              <span class="checkbox-indicator">
+              </span>
+              Гостиница</label>
             </li>
+
             <li class="search item">
-              <input type="checkbox" name="motel" id="motel">
-              <label for="motel">Мотель</label>
+              <label class="label-checkbox">
+              <input type="checkbox" name="motel" id="motel" class="visually-hidden" checked>
+              <span class="checkbox-indicator">
+              </span>
+            Мотель</label>
             </li>
+
             <li class="search item">
-              <input type="checkbox" name="suite" id="suite">
-              <label for="pool">Апартаменты</label>
+              <label class="label-checkbox">
+              <input type="checkbox" name="suite" id="suite" class="visually-hidden" checked>
+              <span class="checkbox-indicator">
+              </span>
+              Апартаменты</label>
             </li>
             </ul>
         </div>
