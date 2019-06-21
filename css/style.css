@@ -94,6 +94,9 @@ img {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
+
+  margin: 0;
+  padding-bottom: 22px;
 }
 
 .standard-benefit h3 {
@@ -115,9 +118,25 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.date-selection {
+  position: relative;
+  width: 1200px;
+  height: 292px;
+  padding-top: 55px;
+  padding-bottom: 0;
+  text-align: center;
+
+  -webkit-box-sizing: border-box;
+
+          box-sizing: border-box;
+
 }
 
 .interested {
@@ -126,13 +145,19 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #333333;
   text-align: center;
+
+  margin: 0;
 }
 
 .dates-request {
   text-align: center;
   margin: 0;
-  margin-bottom: 45px;
+  padding-top: 22px;
+  padding-bottom: 45px;
+  font-size: 14px;
+  line-height: 24px;
 }
+
 
 .search-button {
 
@@ -142,10 +167,14 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   text-transform: uppercase;
   background-color: #766357;
-  width: 100%;
-  padding: 30px 140px 26px 140px;
+
+  width: 567px;
+  height: 86px;
+  margin: 0;
+  padding: 30px 130px 26px 130px;
   border: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 
 }
 
@@ -156,6 +185,23 @@ input[type="radio"].visually-hidden {
 .search-button:active {
   background-color: #503e33;
   color: #928a85;
+}
+
+.hotels-search {
+  position: absolute;
+  left: 50%;
+  margin-left: -283px;
+  z-index: 1;
+  width: 567px;
+  min-height: 396px;
+  padding: 55px 55px 56px 55px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 1px 0px #818181,
+              0px 2px 10px 0px #818181;
+          box-shadow: 0px 1px 1px 0px #818181,
+              0px 2px 10px 0px #818181;
 }
 
 .hotels-search p {
@@ -214,12 +260,19 @@ input[type="radio"].visually-hidden {
   height: 120px;
   background-color: #fefefe;
   color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
-  padding: 35px 73px 35px 73px;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
+  padding: 40px 73px 35px 73px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 
 }
 
@@ -231,24 +284,33 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
-/* .footer-social {
-  width: 200px;
-  margin-right: auto;
-  margin-left: auto;
-} */
+.footer-social {
+  width: 250px;
+}
 
 .footer-social ul {
   padding: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .social-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 46px;
   height: 48px;
   margin-right: 6px;
@@ -310,9 +372,13 @@ p .footer-copyright {
 }
 
 .buttons-wrapper {
-  width: 261px;
+  width: 257px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .button-details {
@@ -364,7 +430,6 @@ p .footer-copyright {
 /* layout */
 .wrapper {
   width: 1200px;
-  height: 2760px;
   margin: 0 auto;
   position: relative;
 }
@@ -394,8 +459,11 @@ p .footer-copyright {
   width: 100%;
   list-style: none;
   background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .main-navigation li {
@@ -406,17 +474,17 @@ p .footer-copyright {
 .main-navigation li:nth-child(1),
 .main-navigation li:nth-child(2) {
   text-align: left;
-  padding-right: 120px;
+  padding-right: 90px;
 }
 
 .main-navigation li:nth-child(3),
 .main-navigation li:nth-child(4) {
   text-align: right;
-  padding-left: 120px;
+  padding-left: 90px;
 }
 
 .main-navigation li:nth-child(3) {
-  margin-left: 65px;
+  margin-left: auto;
 }
 
 
@@ -424,17 +492,18 @@ p .footer-copyright {
   display: block;
   position: relative;
   width: 100%;
-  height: 510px;
+  height: 508px;
   background:
-  url("../img/polygon.svg") no-repeat 50% 100%,
-  url("../img/index.jpg") no-repeat 50% 23%;
-  background-clip: content-box;
+  url("../img/intro-mask.svg") no-repeat 50% 100%,
+  url("../img/index.jpg") no-repeat 50% 21%;
 }
 
 .welcome-image {
   display: block;
   margin: 0 auto;
-  padding-top: 75px;
+  padding-top: 77px;
+  width: 458px;
+  height: 353px;
 }
 
 .sedona-benefits {
@@ -449,7 +518,7 @@ p .footer-copyright {
 }
 
 .benefits-heading {
-  margin-top: 30px;
+  margin-top: 28px;
 }
 
 .benefits-wrapper {
@@ -462,18 +531,28 @@ p .footer-copyright {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .standard-benefit {
   width: 400px;
-  min-height: 255px;
+  height: 256px;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-align: center;
   vertical-align: middle;
+}
+
+.standard-benefit p {
+  margin: 0;
 }
 
 .city-benefit {
@@ -490,8 +569,9 @@ li .bridge-description {
   width: 1200px;
   height: 255px;
   background-color: #81b3d2;
-  box-sizing: border-box;
-  padding: 25px 850px 40px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 48px 850px 40px 50px;
   text-align: center;
 
   color: #ffffff;
@@ -515,10 +595,15 @@ li .bridge-description {
   width: 1200px;
   height: 255px;
   background-color: #81b3d2;
-  box-sizing: border-box;
-  padding: 25px 45px 40px 845px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 48px 45px 40px 845px;
   text-align: center;
   color: #ffffff;
+}
+
+.bridge-wrapper p {
+  margin: 0;
 }
 
 .bridge-wrapper::before {
@@ -536,21 +621,29 @@ li .bridge-description {
 .standard-benefit {
   background-color: #eeeeee;
   text-align: center;
-  padding: 30px 60px 40px 60px;
+  padding: 50px 65px 55px 65px;
 }
 
 .benefit-number {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.city-item-wrapper p {
+  margin: 0;
 }
 
 .bold-heading,
 .standard-benefit h3 {
+  margin: 0;
   padding-left: 70px;
   padding-right: 70px;
 }
 
 .city-benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
   list-style: none;
@@ -563,22 +656,23 @@ li .bridge-description {
   width: 400px;
   height: 330px;
   margin: 0;
-  box-sizing: border-box;
-  padding: 140px 50px 90px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 165px 50px 85px 50px;
   text-align: center;
 
 }
 
 .benefit-5-description {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 11px;
+  padding-right: 11px;
 }
 
 
 .city-benefit-heading.accommodation::before {
   content: "";
   position: absolute;
-  top: 18%;
+  top: 61px;
   left: 50%;
   width: 74px;
   height: 75px;
@@ -591,7 +685,7 @@ li .bridge-description {
 .city-benefit-heading.food::before {
   content: "";
   position: absolute;
-  top: 18%;
+  top: 62px;
   left: 50%;
   width: 74px;
   height: 75px;
@@ -603,7 +697,7 @@ li .bridge-description {
 .city-benefit-heading.souvenirs::before {
   content: "";
   position: absolute;
-  top: 16%;
+  top: 58px;
   left: 50%;
   width: 64px;
   height: 77px;
@@ -612,7 +706,9 @@ li .bridge-description {
   background-repeat: no-repeat;
 }
 
-
+.city-benefit-item p {
+  margin: 0;
+}
 
 
 /*-------*/
@@ -622,31 +718,6 @@ li .bridge-description {
   margin-left: 0;
   margin-right: 0;
   width: 100%;
-  height: 235px;
-}
-
-.interested {
-  margin-top: 55px;
-  margin-bottom: 25px;
-}
-
-.hotels-search {
-  width: 575px;
-  min-height: 480px;
-  margin: 50px auto;
-}
-
-.form-wrapper {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -287px;
-  z-index: 1;
-  width: 575px;
-  min-height: 396px;
-  padding: 55px 56px;
-  box-sizing: border-box;
-  background-color: #ffffff;
 }
 
 
@@ -655,23 +726,35 @@ li .bridge-description {
 }
 
 .footer-link {
-  width: 230px;
-  align-items: center;
+  width: 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 
 .footer-rights {
-  width: 230px;
-  align-items: center;
+  width: 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 
 .footer-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  /* text-align: center; */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer-copyright span {
@@ -681,8 +764,10 @@ li .bridge-description {
 /* inner page layout */
 
 .inner-wrapper {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
+  background-color: #fefefe;
 }
 
 .booking-filters {
@@ -691,21 +776,36 @@ li .bridge-description {
   background-color: #ffffff;
 }
 
+.search-results {
+  margin: 0 auto;
+  width: 1200px;
+
+}
+
+
 .results-list {
   margin: 0;
   list-style: none;
   padding: 0;
   width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .results-item {
   width: 1200px;
   padding: 14px 73px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-top: 1px solid #e5e5e5;
 }
 
@@ -720,11 +820,15 @@ li .bridge-description {
 }
 
 .hotel-photo {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .hotel-profile {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .results-item-image {
@@ -742,18 +846,20 @@ li .bridge-description {
 }
 
 .hotels-filter {
-
   margin: 0;
+}
 
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; */
-
+.hotels-filter p {
+  height: 37px;
 }
 
 .adult-child-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .filters-item {
@@ -764,49 +870,68 @@ li .bridge-description {
 .checkin label,
 .checkout label {
   display: inline-block;
+  vertical-align: baseline;
   width: 100px;
-  height: 30px;
-  padding-right: 15px;
+  height: 37px;
+  padding-right: 10px;
   text-align: left;
 }
 
 .filters-item input {
-  box-sizing: border-box;
-  width: 348px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 346px;
+  height: 37px;
   padding: 6px 220px 6px 12px;
   border: none;
 }
 
 .adults label {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100px;
-  height: 30px;
-  padding-right: 15px;
+  height: 37px;
+  padding-right: 10px;
 }
 
 .children label {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100px;
-  height: 30px;
-  text-align: center;
+  height: 37px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 
 }
 
 div.filters-item.children {
   text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 
 .adults input {
   width: 113px;
-  padding: 6px 0 6px 10px;
+  padding: 6px 10px 6px 10px;
 }
 
 .children input {
   width: 113px;
-  padding: 6px 0 6px 10px;
+  padding: 6px 10px 6px 10px;
 }
 
 .find-button {
@@ -821,6 +946,7 @@ div.filters-item.children {
 .map-wrapper {
   width: 100%;
   height: 591px;
+  /* position: relative; */
 }
 
 .map-image {
@@ -828,11 +954,49 @@ div.filters-item.children {
   height: 591px;
 }
 
+.google-map {
+  position: absolute;
+  top: 0;
+}
+
+input::-webkit-input-placeholder {
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+input::-ms-input-placeholder {
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
 input::placeholder {
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+input::-webkit-input-placeholder {
   color: #000000;
   text-transform: uppercase;
 }
 
+input:-ms-input-placeholder {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+input::-ms-input-placeholder {
+  color: #000000;
+  text-transform: uppercase;
+}
 
 .calendar-btn {
   position: absolute;
@@ -893,19 +1057,25 @@ button .checkout-calendar:active {
 /* inner page filters*/
 
 .filter-section-wrapper {
-  padding: 25px 73px 0 73px;
-  box-sizing: border-box;
+  padding: 30px 73px 0 73px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 20%;
+  background-position: 50% 16%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-size: cover;
-  min-height: 212px;
+  min-height: 217px;
 }
 
 .filter-wrapper {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .accommodation-filter {
@@ -961,7 +1131,9 @@ button .checkout-calendar:active {
   background: #ffffff;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .price-controls label {
@@ -989,6 +1161,8 @@ button .checkout-calendar:active {
 
   background: none;
   border: none;
+
+  line-height: 0;
 }
 
 .range-controls {
@@ -1019,7 +1193,8 @@ button .checkout-calendar:active {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
@@ -1063,12 +1238,19 @@ button .checkout-calendar:active {
 .sorting-options-wrapper {
   margin: 0;
   padding: 30px 73px 30px 73px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 1200px;
   min-height: 86px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
 }
 
@@ -1076,8 +1258,12 @@ button .checkout-calendar:active {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .soring-types-list {
@@ -1085,7 +1271,8 @@ button .checkout-calendar:active {
 }
 
 .sorting-options-wrapper div {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .found {
@@ -1168,17 +1355,18 @@ a.sort-direction-down:active path {
 
 .hotel-profile .button {
   padding: 4px 16px 4px 16px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .button-details {
-  width: 111px;
-  min-height: 27px;
+  width: 110px;
+  height: 27px;
 }
 
 .button-book {
   width: 142px;
-  min-height: 27px;
+  height: 27px;
 }
 
 .number-rating {
@@ -1194,10 +1382,14 @@ a.sort-direction-down:active path {
 
 .type-price-wrapper {
   margin: 0;
-  width: 186px;
-  padding-bottom: 10px;
+  width: 180px;
+  padding-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hotel-rating {
@@ -1209,7 +1401,9 @@ a.sort-direction-down:active path {
 }
 
 .html-academy-logo {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 a.html-academy-logo:hover path {
@@ -1228,23 +1422,28 @@ a.html-academy-logo:active path {
 
 .wrapper,
 .inner-wrapper {
-  box-shadow: 1px 1px 5px 1px #c6c6c6;
+  -webkit-box-shadow: 1px 1px 5px 1px #c6c6c6;
+          box-shadow: 1px 1px 5px 1px #c6c6c6;
 }
 
 .adults-buttons,
 .children-buttons {
   width: 113px;
-  height: 38px;
+  height: 37px;
   background-color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .adults-buttons button,
 .children-buttons button {
   padding: 0 10px;
   width: 40px;
-  height: 38px;
+  height: 37px;
   border: none;
   background-color: #f2f2f2;
   position: relative;
@@ -1254,9 +1453,11 @@ a.html-academy-logo:active path {
 .children-dec::before {
   content: "";
   position: absolute;
+  top: 17px;
   left: 13px;
   width: 12px;
   height: 3px;
+  line-height: 0;
   background-color: #a9a9a9;
 }
 
@@ -1274,9 +1475,11 @@ a.html-academy-logo:active path {
 .children-inc::before {
   content: "";
   position: absolute;
+  top: 17px;
   left: 13px;
   width: 12px;
   height: 3px;
+  line-height: 0;
   background-color: #a9a9a9;
 }
 
@@ -1294,11 +1497,15 @@ a.html-academy-logo:active path {
 .children-inc::after {
   content: "";
   position: absolute;
+  top: 17px;
   left: 13px;
   width: 12px;
   height: 3px;
+  line-height: 0;
   background-color: #a9a9a9;
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .adults-inc:hover::after,
@@ -1314,15 +1521,30 @@ a.html-academy-logo:active path {
 
 input[type="number"] {
   width: 40px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-align: center;
   padding-left: 10px;
   border: none;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
 .filters-item.adults {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .label-checkbox {
@@ -1353,7 +1575,8 @@ input[type="checkbox"] + .checkbox-indicator::before {
 }
 
 .label-checkbox input[type="checkbox"]:disabled + .checkbox-indicator::before {
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 
@@ -1373,5 +1596,10 @@ input[type="checkbox"] + .checkbox-indicator::before {
 }
 
 .label-checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator::before {
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.google-map {
+  border: none;
 }
