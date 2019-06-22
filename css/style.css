@@ -168,9 +168,13 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   background-color: #766357;
 
-  width: 567px;
+  width: 566px;
   height: 86px;
-  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -283px;
+  z-index: 2;
   padding: 30px 130px 26px 130px;
   border: none;
   -webkit-box-sizing: border-box;
@@ -192,7 +196,7 @@ input[type="radio"].visually-hidden {
   left: 50%;
   margin-left: -283px;
   z-index: 1;
-  width: 567px;
+  width: 566px;
   min-height: 396px;
   padding: 55px 55px 56px 55px;
   -webkit-box-sizing: border-box;
@@ -445,7 +449,7 @@ p .footer-copyright {
   margin-left: -70px;
   z-index: 1;
   width: 140px;
-  height: 70px;
+  height: 71px;
 }
 
 .main-navigation {
@@ -1602,4 +1606,9 @@ input[type="checkbox"] + .checkbox-indicator::before {
 
 .google-map {
   border: none;
+}
+
+
+.modal-show {
+  display: none;
 }
