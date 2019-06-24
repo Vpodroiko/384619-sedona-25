@@ -900,7 +900,7 @@ li .bridge-description {
       -ms-flex-align: center;
           align-items: center;
   width: 100px;
-  height: 37px;
+  height: 45px;
   padding-right: 10px;
 }
 
@@ -911,8 +911,8 @@ li .bridge-description {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100px;
-  height: 37px;
+  height: 45px;
+  padding-right: 27px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -932,12 +932,12 @@ div.filters-item.children {
 
 .adults input {
   width: 113px;
-  padding: 6px 10px 6px 10px;
+  padding: 10px 10px 6px 11px;
 }
 
 .children input {
   width: 113px;
-  padding: 6px 10px 6px 10px;
+  padding: 10px 10px 6px 12px;
 }
 
 .find-button {
@@ -945,7 +945,7 @@ div.filters-item.children {
   width: 100%;
   padding: 0;
   min-height: 58px;
-  margin-top: 25px;
+  margin-top: 20px;
   margin-right: 0;
   border: none;
 }
@@ -1465,7 +1465,7 @@ a.html-academy-logo:active path {
   content: "";
   position: absolute;
   top: 17px;
-  left: 13px;
+  left: 14px;
   width: 12px;
   height: 3px;
   line-height: 0;
@@ -1487,8 +1487,8 @@ a.html-academy-logo:active path {
   content: "";
   position: absolute;
   top: 17px;
-  left: 13px;
-  width: 12px;
+  right: 14px;
+  width: 11px;
   height: 3px;
   line-height: 0;
   background-color: #a9a9a9;
@@ -1509,8 +1509,8 @@ a.html-academy-logo:active path {
   content: "";
   position: absolute;
   top: 17px;
-  left: 13px;
-  width: 12px;
+  right: 14px;
+  width: 11px;
   height: 3px;
   line-height: 0;
   background-color: #a9a9a9;
@@ -1535,7 +1535,7 @@ input[type="number"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
-  padding-left: 10px;
+  padding: 10px 12px 10px 13px;
   border: none;
 }
 
