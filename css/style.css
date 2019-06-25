@@ -804,7 +804,7 @@ li .bridge-description {
 
 .results-item {
   width: 1200px;
-  padding: 29px 73px;
+  padding: 30px 73px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1115,7 +1115,7 @@ button .checkout-calendar:active {
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 
   font-weight: 600;
   font-size: 16px;
@@ -1129,6 +1129,7 @@ button .checkout-calendar:active {
   border: 2px solid #ffffff;
   border-radius: 2px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .price-controls::after {
@@ -1150,16 +1151,18 @@ button .checkout-calendar:active {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 38px;
+  line-height: 21px;
   vertical-align: top;
 
   cursor: pointer;
 }
 
-.price-controls .min-price,
+.price-controls .min-price {
+  padding: 5px 20px 8px 65px;
+}
+
 .price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
+  padding: 5px 25px 8px 55px;
 }
 
 .price-controls input {
@@ -1222,7 +1225,7 @@ button .checkout-calendar:active {
 
 .btn-transparent {
   display: block;
-  margin: 0 auto;
+  margin: 0 83px;
   padding: 6px 35px;
 
   font-size: 14px;
@@ -1292,7 +1295,7 @@ button .checkout-calendar:active {
 
 .sort-type {
   padding-top: 4px;
-  padding-right: 38px;
+  padding-right: 40px;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
